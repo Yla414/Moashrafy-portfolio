@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/moashrafy-portfolio/static/css/main.8a1dd96c.css",
+    "main.js": "/moashrafy-portfolio/static/js/main.05c4bda8.js",
+    "static/media/design 3.png": "/moashrafy-portfolio/static/media/design 3.92b91bddab30de97af69.png",
+    "static/media/design 2.png": "/moashrafy-portfolio/static/media/design 2.c249e53b6a1d70edb652.png",
+    "static/media/design 6.png": "/moashrafy-portfolio/static/media/design 6.4934f5c5c0a4d028ed95.png",
+    "static/media/design 8.png": "/moashrafy-portfolio/static/media/design 8.c338e1862adb1cc942d3.png",
+    "static/media/design 4.png": "/moashrafy-portfolio/static/media/design 4.70ffeaf79bf712130fd5.png",
+    "static/media/design 5.png": "/moashrafy-portfolio/static/media/design 5.4d3a94da7de8ce04954c.png",
+    "static/media/design 9.png": "/moashrafy-portfolio/static/media/design 9.cf9290c88ad6864bf1bf.png",
+    "static/media/design 7.png": "/moashrafy-portfolio/static/media/design 7.7d8a0412a43747b13090.png",
+    "static/media/design 10.png": "/moashrafy-portfolio/static/media/design 10.ecd5df15896d0b57079d.png",
+    "index.html": "/moashrafy-portfolio/index.html",
+    "main.8a1dd96c.css.map": "/moashrafy-portfolio/static/css/main.8a1dd96c.css.map",
+    "main.05c4bda8.js.map": "/moashrafy-portfolio/static/js/main.05c4bda8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a1dd96c.css",
+    "static/js/main.05c4bda8.js"
+  ]
+}
