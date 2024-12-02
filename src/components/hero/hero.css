@@ -1,0 +1,123 @@
+.project__hero__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15%;
+}
+
+.project__hero__image__container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-variant);
+}
+
+
+.project__hero__image__container span.user__image {
+    font-size: 60px;
+}
+
+.project__hero__name__container {
+    position: absolute;
+    right: -100px;
+    top: 0;
+    background: var(--section-color);
+    color: var(--primary-variant);
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    border-radius: 2rem;
+    font-size: 15px;
+    transform: rotate(-5deg);
+    transition: all 300ms ease-in-out;
+    animation: bounce 10s linear infinite;
+}
+
+@keyframes bounce {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 50%;
+    }
+}
+
+.project__hero__text__container {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project__hero__text__container h1 {
+    width: 60%;
+    font-size: 50px;
+    font-weight: 500;
+    /* line-height: 60px; */
+}
+
+.project__hero__button { margin-top: 1rem; }
+
+.project__hero__button button {
+    width: 150px;
+    height: 45px;
+    background-color: var(--primary-variant);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+    border: 1px solid var(--border-color);
+    font-size: 15px;
+    font-size: 500;
+}
+
+.project__hero__button button span {
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+
+/* ------------------MEDIA QUERIES-------------- */
+@media screen and (max-width: 1024px) {
+    .project__hero__text__container h1 { width: 70%; }
+}
+@media screen and (max-width: 992px) {
+    .project__hero__text__container h1 { width: 60%; font-size: 36px; }
+}
+
+
+@media screen and (max-width: 768px) {
+    .project__hero__text__container h1 { 
+        width: auto;
+        font-size: 38px; 
+        line-height: 40px;
+    }
+
+    .breaker { display: none; }
+
+    .project__hero__container {
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .project__hero__text__container{text-align: left;}
+}
+
+@media screen and (max-width: 540px) {
+    .project__hero__text__container h1 { 
+        font-size: 26px; 
+    }
+
+    .project__hero__container.container__large { margin-top: 10%; }
+}

@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #242424;
+    --primary-variant: #363636;
+    --secondary-color: #fffffd;
+    --bg-grey: #f0efed;
+    --section-color: #fbfbfb;
+    --border-color: #888888b0;
+    --text-color: #c5c5c5;
+    --text-fade: #444444de;
+
+    --font: 'Manrope', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: var(--font);
+    font-weight: 500;
+    overflow-x: hidden;
+}
+
+.muted { color: var(--text-color); }
+.small { font-size: 14px; }
+.btn__border {
+    border: 2px solid var(--border-color);
+}
+
+.btn__cta {
+    width: 120px;
+    height: 50px;
+}
+
+.btn__primary {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn__secondary {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.btn__secondary:hover {
+    opacity: .6;
+}
+
+.container__large {
+    width: 88%;
+    margin: 0 auto;
+}
+
+.project__wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.mobile__visible {
+    display: none;
+}
+
+.text__center { text-align: center; }
+
+.tag {
+    position: absolute;
+    background: var(--section-color);
+    color: var(--primary-variant);
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    font-size: 15px;
+    transform: rotate(-5deg);
+}
+
+.divider {
+    position: relative;
+    height: 1px;
+    background: var(--primary-variant);
+}
+
+.divider .tag {
+    position: absolute;
+    left: 44.5%;
+    top: -18px;
+}
+
+@media screen and (max-width: 992px) {
+    .divider .tag { left: 40%; margin-bottom: 2rem; }
+}
+
+@media screen and (max-width: 800px) {
+    .divider { margin-top: 5%; }
+    .divider .tag {
+        width: 100px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .divider { margin-top: 35%; }
+    .divider .tag {
+        left: 35%;
+    }
+}

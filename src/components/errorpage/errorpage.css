@@ -1,0 +1,17 @@
+.project__error__container {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0; 
+}
+
+.project__error__container .error__icon {
+    font-size: 60px;
+}
+
+.project__error__container h1 {
+    line-height: 50px;
+    font-size: 28px;
+}

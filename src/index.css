@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  list-style-type: none;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 { font-weight: bold; }
+
+button {
+  background: transparent;
+  font-family: 'Inter';
+  cursor: pointer;
+  color: var(--text-color);
+  font-family: var(--font);
+  
+}
+
+a, button {
+  transition: 200ms ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+

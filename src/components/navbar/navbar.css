@@ -1,0 +1,105 @@
+.project__navbar__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--primary-variant);
+    padding: 1rem 0 .8rem;
+}
+
+.project__navbar__menu__left a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.project__navbar__menu__email__icon {
+    background-color: var(--primary-variant);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+}
+
+.project__navbar__menu__right,
+.project__navbar__menu__right ul {
+    display: flex;
+    align-items: center;
+}
+
+.project__navbar__menu__right { gap: 2rem; }
+
+.project__navbar__menu__right ul { gap: .75rem; }
+
+.project__navbar__timelocation__container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.project__navbar__timelocation__container .time {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+}
+
+.show__sidebar, .hide__sidebar {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: -100%;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 2px;
+    background-color: var(--primary-variant);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1rem;
+    visibility: visible;
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+}
+
+.show__sidebar {
+    right: 0;
+}
+
+.hide__sidebar {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.close__button__container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.show__sidebar ul, .hide__sidebar ul {
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-decoration: underline;
+}
+
+
+/* -----------------------MEDIA QUERIES------------------- */
+@media screen and (max-width: 768px) {
+    .project__navbar__menu__right ul, 
+    .project__navbar__timelocation__container { display: none; }
+
+    .project__navbar__menu__toggle__container.mobile__visible { display: flex; }
+}
+
+@media screen and (max-width: 540px) {
+    .project__navbar__menu__left .mobile__visible { display: flex; }
+    .project__navbar__menu__left .email { display: none; }
+}
